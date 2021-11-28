@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    --facebook-blue: #385185;
+    --black: #262626;
+    --sad-blue: rgba(0,149,246);
+    --bg-color: #fafafa;
+    --gray: #8E8E8E;
+}
+
 *,
 *::before,
 *::after {
@@ -7,7 +17,7 @@
 body {
     margin: 0;
     line-height: 1.6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
