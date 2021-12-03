@@ -25,7 +25,7 @@ html, body {
 body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto, Geneva, Tahoma, sans-serif;
     background-color: var(--bg-color);
 }
 
@@ -89,7 +89,6 @@ p {
     width: 350px;
     margin: auto;
     border: 1px solid purple;
-
 }
 
 .form-container h1 {
@@ -137,7 +136,6 @@ label {
 
 label, label>span {
     display: block;
-    
 }
 
 .input-span {
@@ -154,8 +152,6 @@ label, label>span {
     color: gray;
     transition: transform .1s ease-out;
     transform-origin: left;
-    
-
 }
 
 .triggered .input-span {
@@ -188,6 +184,42 @@ label, label>span {
     text-align: right;
     padding: 0 0 0 8px;
     height: 34px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    color: white;
+    background-color: #0095f64d;
+    cursor: default;
+    margin-top: 8px;
+}
+
+/* OR SECTION STYLING ################### */
+
+.or-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+
+.line-1, .line-2 {
+    border-top: 1px rgb(209, 209, 209) solid;
+    width: 40%;
+    height: 0;
+    margin-bottom: 1px;
 }
 
 /* FOOTER STYLING ################# */
