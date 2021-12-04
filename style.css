@@ -51,8 +51,17 @@ p {
     overflow-wrap: break-word;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .bd {
     border: 1px solid black;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .horizontal-padding-40 {
@@ -65,10 +74,9 @@ p {
     padding-bottom: 10px;
 }
 
-
 .outer-content-container {
     height: 100%;
-    background-color: white;
+    /* background-color: white; */
     max-width: 750px;
     min-width: 500px;
     margin: auto;
@@ -81,8 +89,14 @@ p {
 .top-container {
     height: 80%;
     min-height: 666px;
-    border: 2px solid limegreen;
+    /* border: 2px solid limegreen; */
     display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.slide-show-container {
+    display: none;
 }
 
 .content-container {
@@ -125,7 +139,15 @@ p {
 
 .spacer {
     padding-right: 8px;
-    height: 100%;
+    height: 36px;
+    background-color: var(--bg-color);
+    display: block;
+}
+
+.test {
+    height: 36px;
+    width: 24px;
+    background-color: green;
 }
 
 label {
@@ -141,6 +163,10 @@ label {
 
 label, label>span {
     display: block;
+}
+
+input:not(input[type="submit"]){
+    background-color: var(--bg-color);
 }
 
 .input-span {
@@ -269,13 +295,49 @@ input[type="submit"] {
     text-align: center;
 }
 
+/* NEW ACCOUNT #####################*/
+.new-account-container {
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 12px;
+    border: 1px solid var(--border-gray);
+    font-size: 14px;
+}
+
+.new-account-container a {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+/* APP STORE BUTTONS ################## */
+.app-stores-outer-container {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.app-store-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.app-store-btn-container img {
+    width: 136px;
+}
+
+.app-store-btn-container a:first-child {
+    margin-right: 8px;
+}
+
 /* FOOTER STYLING ################# */
 
 footer {
     text-align: center;
     padding: 0 10px;
     height: 130px;
-    border: 2px pink solid;
+    /* border: 2px pink solid; */
 }
 
 .footer-links-container {
@@ -319,6 +381,22 @@ select {
     font-size: inherit;
     cursor: inherit;
     line-height: inherit;
+    background-color: var(--bg-color);
+}
+
+@media only screen and (min-width: 875px) {
+    .slide-show-container {
+        display: block;
+        width: 454px;
+        height: 618px;
+        background-image: url(images/Phones.png);
+        background-position: 0 0;
+        background-size: 454px 618px;
+        background-repeat: no-repeat;
+        margin-top: -50px;
+        margin-left: -43px;
+        /* border: 1px solid pink; */
+    }
 }
 
 
