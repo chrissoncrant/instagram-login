@@ -6,6 +6,7 @@
     --sad-blue: rgba(0,149,246);
     --bg-color: #fafafa;
     --gray: #8E8E8E;
+    --border-gray: #dbdbdb;
 }
 
 *,
@@ -88,7 +89,12 @@ p {
     height: 600px;
     width: 350px;
     margin: auto;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
+}
+
+.form-container {
+    padding-bottom: 20px;
+    border: 1px solid var(--border-gray);
 }
 
 .form-container h1 {
@@ -101,8 +107,7 @@ p {
     background-image: url(images/Instagram-sprite.png);
     background-repeat: no-repeat;
     background-position: -231px 0;
-    background-size: 450px;
-    
+    background-size: 450px; 
 }
 
 /* FORM STYLING ################# */
@@ -220,6 +225,48 @@ input[type="submit"] {
     width: 40%;
     height: 0;
     margin-bottom: 1px;
+}
+
+/* FACEBOOK LOGIN #################*/
+#fb-login-link {
+    text-decoration: none;
+}
+
+#fb-login-link p:hover {
+    color: #304572;
+}
+
+.facebook-login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.fb-logo {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    background-image: url(images/Instagram-sprite.png);
+    background-position: 88px 78px;
+    background-size: 421px ;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.fb-txt {
+    color: var(--facebook-blue);
+    font-weight: 600;
+} 
+
+/* FORGOT PASSWORD SECTION #########*/
+
+.forgot-pw-container a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 12px;
+    text-align: center;
 }
 
 /* FOOTER STYLING ################# */
