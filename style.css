@@ -387,6 +387,7 @@ select {
 @media only screen and (min-width: 875px) {
     .slide-show-container {
         display: block;
+        position: relative;
         width: 454px;
         height: 618px;
         background-image: url(images/Phones.png);
@@ -396,6 +397,47 @@ select {
         margin-top: -50px;
         margin-left: -43px;
         /* border: 1px solid pink; */
+    }
+
+    .bg-color {
+        background-color: white; 
+        height: 426px;
+        width: 239px;
+        position: absolute;
+        margin: 100px 151px;
+    }
+
+    .slide-show-container img {
+        height: 426px;
+        position: absolute;
+        /* margin: 100px 151px; */
+        opacity: 0;
+    }
+
+    @keyframes fade {
+        15% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0;
+        }
+    }
+
+    .fade {
+        animation: fade 20s infinite linear;
+    }
+
+    .slide-show-container img:nth-child(2) {
+        animation-delay: 5s;
+    }
+    .slide-show-container img:nth-child(3) {
+        animation-delay: 10s;
+    }
+    .slide-show-container img:nth-child(4) {
+        animation-delay: 15s;
     }
 }
 
