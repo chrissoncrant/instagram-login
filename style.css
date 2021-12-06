@@ -78,7 +78,6 @@ a {
     height: 100%;
     /* background-color: white; */
     max-width: 750px;
-    min-width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -382,6 +381,26 @@ select {
     cursor: inherit;
     line-height: inherit;
     background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 400px) {
+    .form-container, .new-account-container {
+        border: none;
+        background-color: transparent;
+    }
+
+    .top-container {
+        height: 70%;
+        min-height: 0;
+        margin-top: 0;
+    }
+
+    .content-container {
+        height: 100%;
+    }
+    footer {
+        margin-bottom: 36px;
+    }
 }
 
 @media only screen and (min-width: 875px) {
