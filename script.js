@@ -4,8 +4,6 @@ let inputs = document.querySelectorAll(".input-container input");
 
 let logInBtn = document.querySelector('input[type="submit"]');
 
-
-
 //Setting the Show Hide Button
 const showHideContainer = document.getElementById('show-hide-container');
 
@@ -25,16 +23,12 @@ showHideBtn.addEventListener('click', () => {
     }
 })
 
-// console.log(labels);
-
-// console.log(showHideBtn);
-
-//Login Button check variables
+//Login Button check variables:
 let check1 = 0;
 let check2 = 0;
 
+//Input Event Behavior:
 inputs.forEach(input => {   
-    console.log('test');
     input.addEventListener('input', () => {
         if (input.id === "username") {
             if (input.value === "") {
@@ -68,3 +62,21 @@ inputs.forEach(input => {
     });
 });
 
+//Outline Behavior:
+inputs.forEach(input => {
+    input.addEventListener('focus', () => {
+        if (input.id === "username") {
+            document.querySelectorAll(".input-container")[0].classList.add("active-outline");
+        } else {
+            document.querySelectorAll(".input-container")[1].classList.add("active-outline");
+        };
+    })
+
+    input.addEventListener('blur', () => {
+        if (input.id === "username") {
+            document.querySelectorAll(".input-container")[0].classList.remove("active-outline");
+        } else {
+            document.querySelectorAll(".input-container")[1].classList.remove("active-outline");
+        };
+    })
+})
