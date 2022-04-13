@@ -19,9 +19,9 @@
     margin: 0;
 }
 
-html, body {
+/* html, body {
     height: 100%;
-}
+} */
 
 body {
     line-height: 1.6;
@@ -343,7 +343,7 @@ footer {
     text-align: center;
     padding: 0 10px;
     height: 160px;
-    /* border: 2px pink solid; */
+    margin-top: 30px;
 }
 
 .footer-links-container {
@@ -368,7 +368,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    margin: 12px 0 50px;
+    margin: 12px 0;
     color: gray;
 }
 
@@ -405,8 +405,9 @@ select {
     .content-container {
         height: 100%;
     }
+
     footer {
-        margin-bottom: 36px;
+        margin-bottom: 12px;
     }
 }
 
